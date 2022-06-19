@@ -11,7 +11,7 @@ export const appRouter = trpc
       .nullish(),
     resolve({ input }) {
       return {
-        greeting: `hello ${input?.text ?? 'world'}`,
+        greeting: `Hello ${input?.text + "!" ?? 'world'}`,
       };
     },
   });
