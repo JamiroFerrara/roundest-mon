@@ -11,7 +11,9 @@ export const appRouter = trpc
       .nullish(),
     resolve({ input }) {
       return {
-        greeting: `Hello ${input?.text + "!" ?? 'world'}`,
+        name: "jamiro",
+        surname: "ferrara",
+        age: 22
       };
     },
   });
